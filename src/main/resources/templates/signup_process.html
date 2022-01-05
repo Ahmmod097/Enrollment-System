@@ -1,0 +1,56 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Sign Up Process</title>
+  <style>
+    body{
+        height:100vh;
+        width: 100vw;
+        font-style: Sans-Serif;
+
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .background {
+         position: relative;
+         margin-top: 5%;
+         margin-right: auto;
+         margin-left: auto;
+         width: 80%;
+         height: 80%;
+    }
+    .background img {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+         opacity: 0.4;
+    }
+    .backgroundText{
+         position:absolute;
+         top:50%;
+         left:50%;
+         transform: translate(-50%, -50%);
+         width: 100%;
+         text-align: center;
+    }
+
+
+</style>
+</head>
+<body >
+<div class="background">
+  <img class="img-fluid" th:src="@{/images/banner.ff3a1126.jpg}" />
+  <div class="backgroundText">
+    <h2 style="color:black;">You have signed up successfully!</h2>
+    <a th:href="@{/login}">Click here to Login</a>
+  </div>
+</div>
+</body>
+</html>
